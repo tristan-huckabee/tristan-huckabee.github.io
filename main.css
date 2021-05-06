@@ -328,5 +328,5 @@ strong {
 img {
     max-height: 100%;
     display: block;
-    margin: auto;
+    margin: 0 auto;
 }
