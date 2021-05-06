@@ -265,6 +265,11 @@ footer{
  
     padding: 0 4%;
 }
+.pop-item {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .poppy {
     text-indent: 30px;
 }
