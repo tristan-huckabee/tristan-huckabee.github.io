@@ -325,8 +325,3 @@ a:hover {
 strong {
     color: #ffa800;
 }
-img {
-    max-width: 100%;
-    display: block;
-    margin: 5% auto;
-}
