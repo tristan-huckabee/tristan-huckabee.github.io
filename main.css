@@ -267,7 +267,7 @@ footer{
 }
 .pop-item {
     background-position: center;
-    background-size: cover;
+    background-size: length(auto 100%);
     background-repeat: no-repeat;
 }
 .poppy {
