@@ -326,7 +326,7 @@ strong {
     color: #ffa800;
 }
 img {
-    max-height: 100%;
+    max-width: 100%;
     display: block;
     margin: 5% auto;
 }
