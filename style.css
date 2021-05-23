@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Recursive&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #202020;
+    font-family: 'Recursive', Sans-Serif;
+    color: #ffffff;
+}
+/*Header*/
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+header a:hover {
+    color: #ffa800;
+}
+/*Panels*/
+.container {
+    display: flex;
+    width: 100vw;
+    padding: 5vw;
+    background-color: #303030;
+    box-shadow: 0 0 20px 0 #000000;
+}
+.panel {
+    flex: 0.5;
+    height: 60vh;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #202020;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 0 #000000 inset;
+    color: #fff;
+    cursor: pointer;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    transition: flex 0.7s ease-in;
+}
+.panel h2 {
+    opacity: 0;
+    color: #ffa800;
+    font-size: 24px;
+}
+.panel p {
+    opacity: 0;
+    text-align: center;
+}
+.panel .project-btn {
+    opacity: 0;
+    padding: 0 5px;
+}
+.panel a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+.panel a:hover {
+    color: #ffa800;
+}
+.panel.active {
+    flex: 5;
+    cursor: auto;
+    transition: flex 0.7s ease-in;
+}
+.panel.active h2 {
+    opacity: 1;
+    
+    transition: opacity 0.3s ease-in 0.4s;
+}
+.panel.active p {
+    opacity: 1;
+    
+    transition: opacity 0.2s ease-in 0.5s;
+}
+.panel.active .project-btn {
+    opacity: 1;
+    
+    transition: opacity 0.3s ease-in 0.4s;
+}
+.panel.dark {
+    background-blend-mode: color-dodge;
+}
+.panel.dark.active {
+    background-blend-mode: overlay;
+}
+
+@media(max-width: 480px) {
+    .container {
+        text-align: center;
+    }
+    .panel p {
+        display: none;
+    }
+    header a {
+        padding: 0 20px;
+    }
+}
